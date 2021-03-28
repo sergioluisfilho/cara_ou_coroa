@@ -14,12 +14,12 @@ class _ResultadoState extends State<Resultado> {
   Widget build(BuildContext context) {
     print(widget.valor);
 
-    var caminhoImagem;
-    if (widget.valor == "cara") {
-      caminhoImagem = "imagens/moeda_cara.png";
-    } else {
-      caminhoImagem = "imagens/moeda_coroa.png";
-    }
+    var caminhoImagem = "imagens/moeda_${widget.valor}.png";
+    // if (widget.valor == "cara") {
+    //   caminhoImagem = "imagens/moeda_cara.png";
+    // } else {
+    //   caminhoImagem = "imagens/moeda_coroa.png";
+    // }
     return Scaffold(
       backgroundColor: Color(0xff61bd86),
       body: Container(
